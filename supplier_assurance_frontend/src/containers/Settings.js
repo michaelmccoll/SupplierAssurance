@@ -1,7 +1,6 @@
 import {useState} from 'react';
 
-const Settings = ()=>{
-    const [Org,setNewOrg] = useState(null)
+const Settings = ({data})=>{
     const [Supplier,setNewSupplier] = useState(null)
     const [Type,setNewType] = useState(null)
     const [Tier,setNewTier] = useState(null)
@@ -10,7 +9,6 @@ const Settings = ()=>{
     const [LastReviewDate,setNewLastReviewDate] = useState(null)
     const [NextReviewDate,setNewNextReviewDate] = useState(null)
 
-    const setOrg = (event) => {setNewOrg(event.target.value)}
     const setSupplier = (event) => {setNewSupplier(event.target.value)}
     const setType = (event) => {setNewType(event.target.value)}
     const setTier = (event) => {setNewTier(event.target.value)}
@@ -26,7 +24,7 @@ const Settings = ()=>{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
-                organisation: Org,
+                organisation: data[0],
                 name: Supplier,
                 type: Type,
                 tier: Tier,
@@ -43,10 +41,6 @@ const Settings = ()=>{
         <>
         <h3>Add New Supplier</h3>
             <form>
-                <div>
-                    <label htmlFor="Org">Organisation: </label>
-                    <input onChange={setOrg} type="text" name="Org" id="Org"></input>
-                </div>
                 <div>
                     <label htmlFor="Supplier">Supplier Name: </label>
                     <input onChange={setSupplier} type="text" name="Supplier" id="Supplier"></input>
