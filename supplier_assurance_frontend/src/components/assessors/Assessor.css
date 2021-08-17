@@ -1,0 +1,33 @@
+.assessor {
+    padding: 10px 10px;
+    background-color:white;
+    border-color: rgb(27,160,236);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    width: 300px;
+    margin: 5px 10px 10px 5px;
+    
+}
+
+.assessorPic{
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.assessorName{
+    font-size: larger;
+    margin: 5px;
+    vertical-align:top;
+    display:inline-table;
+}
+
+.assessorRole{
+    margin: 5px;
+    justify-self: left;
+}
+
+.display {
+    display:block;
+}
