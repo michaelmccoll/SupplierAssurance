@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import React from 'react';
 import SupplierList from "../components/suppliers/SupplierList"
+import "../components/suppliers/Supplier.css";
 
 const Suppliers = ({data})=>{
 
@@ -8,7 +9,7 @@ const Suppliers = ({data})=>{
 
     return(
         <>
-            <h1>Suppliers list...</h1>
+            <h2>Suppliers</h2>
             <table className="table">
                 <thead>
                     <th>Supplier</th>

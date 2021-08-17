@@ -1,7 +1,7 @@
 const Issues = ()=>{
     return(
         <>
-            <h1>Issues PAGE</h1>
+            <h2>Issues</h2>
         </>
     )
 }

@@ -1,7 +1,7 @@
 const Reviews = ()=>{
     return(
         <>
-            <h1>Reviews PAGE</h1>
+            <h2>Reviews</h2>
         </>
     )
 }

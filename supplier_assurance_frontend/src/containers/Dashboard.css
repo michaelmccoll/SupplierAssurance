@@ -1,0 +1,22 @@
+.tile{
+    color:rgb(27,160,236);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgb(27,160,236);
+    width: 680px;
+    height: 250px;
+    display:inline-table;
+    margin: 5px 10px 10px 20px;
+}
+
+h3{
+    margin-left: 15px;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+h4{
+    margin-left: 15px;
+    margin-top: 10px;
+}

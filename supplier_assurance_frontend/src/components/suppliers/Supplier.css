@@ -1,0 +1,28 @@
+.table {
+	margin-top: 10px;
+    margin-right: auto;
+    margin-left: 20px;
+    text-align: left;
+}
+
+th {
+    padding: 10px 20px;
+    background-color: rgb(12,106,236);
+    color: white;
+    width: 150px;
+}
+
+td {
+    padding: 5px 20px;
+    background-color:white;
+    border-color: rgb(27,160,236);
+    border-width: 1px;
+    border-style: solid;
+    width: 150px;
+}
+
+ul{
+    margin-left: 20px;
+    margin-top: 0px;
+}
+

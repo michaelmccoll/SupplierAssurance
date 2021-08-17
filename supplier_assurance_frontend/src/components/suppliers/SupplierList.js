@@ -1,14 +1,15 @@
 import SupplierDetails  from "./SupplierDetails"
+import "./Supplier.css";
 
 const SupplierList = ({suppliers}) => {
 
     const OrgsSuppliers = suppliers.map(supplier => {
         return(
-            <li key={supplier.id}>
-                <div>
+            
+                <div key={supplier.id}>
                     <SupplierDetails SupplierDetail={supplier}></SupplierDetails>
                 </div>
-            </li>
+           
         )
     })
 
