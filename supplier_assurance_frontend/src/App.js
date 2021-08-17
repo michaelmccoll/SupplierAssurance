@@ -16,6 +16,10 @@ function App() {
 
   const [OrgData, setOrgData] = useState([])
   const [loaded, setLoaded] = useState(false)
+  const [OrgIssues, setOrgIssues] = useState([])
+  const [IssuesLoaded, setIssuesLoaded] = useState(false)
+  const [OrgReviews, setOrgReviews] = useState([])
+  const [ReviewsLoaded, setReviewsLoaded] = useState(false)
 
   const getOrgData = () => {
     fetch(`http://localhost:8080/organisations`)
@@ -25,8 +29,26 @@ function App() {
     })
     .then(() => setLoaded(true))}
 
+    const getOrgIssues = () => {
+      fetch(`http://localhost:8080/issues`)
+      .then(res => res.json())
+      .then(data => {
+        setOrgIssues(data)
+      })
+      .then(() => setIssuesLoaded(true))}
+
+    const getOrgReviews = () => {
+      fetch(`http://localhost:8080/reviews`)
+      .then(res => res.json())
+      .then(data => {
+        setOrgReviews(data)
+      })
+      .then(() => setReviewsLoaded(true))}
+
   useEffect(()=>{
     getOrgData();
+    getOrgIssues();
+    getOrgReviews();
   },[])
 
   return (
@@ -36,7 +58,7 @@ function App() {
         <NavBar/>
         <Switch>
         <Route exact path="/">
-          <Home data={OrgData} loaded={loaded}/>
+          <Home data={OrgData} loaded={loaded} reviews={OrgReviews} ReviewsLoaded={ReviewsLoaded} issues={OrgIssues} IssuesLoaded={IssuesLoaded}/>
         </Route>
 
         <Route path="/suppliers">
@@ -48,11 +70,11 @@ function App() {
         </Route>
 
         <Route path="/reviews">
-          <Reviews data={OrgData} loaded={loaded}/>
+          <Reviews reviews={OrgReviews} ReviewsLoaded={ReviewsLoaded}/>
         </Route>
 
         <Route path="/issues">
-          <Issues data={OrgData} loaded={loaded}/>
+          <Issues issues={OrgIssues} IssuesLoaded={IssuesLoaded}/>
         </Route>
 
         <Route path="/settings">

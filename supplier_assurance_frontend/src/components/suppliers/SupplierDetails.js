@@ -11,6 +11,7 @@ const SupplierDetails = ({SupplierDetail})=>{
                     <td>{SupplierDetail.lastReviewDate}</td>
                     <td>{SupplierDetail.nextReviewDate}</td>
                     <td>{SupplierDetail.review[0].progress}</td>
+                    <td></td>
                 </tr>
             </tbody>
         </>
