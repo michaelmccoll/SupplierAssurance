@@ -63,11 +63,11 @@ const Settings = ({data})=>{
                 </div>
                 <div>
                     <label htmlFor="LastReviewDate">Last Review Date: </label>
-                    <input onChange={setLastReviewDate} type="text" name="LastReviewDate" id="LastReviewDate"></input>
+                    <input onChange={setLastReviewDate} type="date" name="LastReviewDate" id="LastReviewDate"></input>
                 </div>
                 <div>
                     <label htmlFor="newNextReviewDate">Next Review Date: </label>
-                    <input onChange={setNextReviewDate} type="text" name="newNextReviewDate" id="newNextReviewDate"></input>
+                    <input onChange={setNextReviewDate} type="date" name="newNextReviewDate" id="newNextReviewDate"></input>
                 </div>
                 <input class="submit" onClick={addSupplier} type="submit" value="submit"></input>
             </form>
