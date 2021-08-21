@@ -17,8 +17,6 @@ const Suppliers = ({data})=>{
                     <th>Tier</th>
                     <th>Last Review</th>
                     <th>Next Review</th>
-                    <th>Review Progress</th>
-                    <th>Review</th>
                 </thead>
             </table>
             <SupplierList suppliers={OrgSuppliers}/>
