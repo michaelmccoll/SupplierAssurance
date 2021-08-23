@@ -10,6 +10,7 @@ const SupplierDetails = ({SupplierDetail})=>{
                     <td>{SupplierDetail.tier}</td>
                     <td>{SupplierDetail.lastReviewDate}</td>
                     <td>{SupplierDetail.nextReviewDate}</td>
+                    <a href="http://localhost:3000/review/SupplierDetail.id">Review</a>
                 </tr>
             </tbody>
         </>

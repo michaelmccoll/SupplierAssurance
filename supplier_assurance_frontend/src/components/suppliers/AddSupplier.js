@@ -35,6 +35,7 @@ const AddSupplier = ({data})=>{
             })
           })
           .then(response=>response.json())
+          .then(window.location.reload())
           .then(result=>{console.log('Success', result)})}
 
     return(
