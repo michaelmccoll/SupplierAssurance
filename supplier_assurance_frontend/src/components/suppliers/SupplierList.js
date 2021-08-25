@@ -1,4 +1,4 @@
-import SupplierDetails  from "./SupplierDetails"
+import SupplierDetails  from "./SupplierOverview"
 import "./Supplier.css";
 
 const SupplierList = ({suppliers}) => {

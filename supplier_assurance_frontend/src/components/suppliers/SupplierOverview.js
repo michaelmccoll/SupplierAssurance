@@ -1,6 +1,9 @@
 import "./Supplier.css";
+import {useState} from 'react';
+import SupplierDetail from "./SupplierDetail";
 
 const SupplierDetails = ({SupplierDetail})=>{
+
     return(
         <>
             <tbody >
@@ -10,7 +13,7 @@ const SupplierDetails = ({SupplierDetail})=>{
                     <td>{SupplierDetail.tier}</td>
                     <td>{SupplierDetail.lastReviewDate}</td>
                     <td>{SupplierDetail.nextReviewDate}</td>
-                    <a href="http://localhost:3000/review/SupplierDetail.id">Review</a>
+                    {/* <SupplierDetail SupplierDetail={SupplierDetail}/> */}
                 </tr>
             </tbody>
         </>
