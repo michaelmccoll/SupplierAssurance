@@ -11,7 +11,7 @@ const ReviewDetails = ({ReviewDetail})=>{
                     <td>{ReviewDetail.type}</td>
                     <td>{ReviewDetail.date}</td>
                     <td>{ReviewDetail.progress}</td>
-                    {/* <td>{ReviewDetail.triageQuestions[0].triageDomain}:{ReviewDetail.triageQuestions[0].triageAnswer}</td> */}
+                    <td>ICON</td>
                 </tr>
             </tbody>
         </>

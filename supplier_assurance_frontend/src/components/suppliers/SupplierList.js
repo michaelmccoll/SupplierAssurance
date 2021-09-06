@@ -1,4 +1,4 @@
-import SupplierDetails  from "./SupplierOverview"
+import SupplierOverview  from "./SupplierOverview"
 import "./Supplier.css";
 
 const SupplierList = ({suppliers}) => {
@@ -7,7 +7,7 @@ const SupplierList = ({suppliers}) => {
         return(
             
                 <div key={supplier.id}>
-                    <SupplierDetails SupplierDetail={supplier}></SupplierDetails>
+                    <SupplierOverview SupplierDetail={supplier}></SupplierOverview>
                 </div>
            
         )

@@ -7,6 +7,9 @@ const Settings = ({data})=>{
         <>
             <AddSupplier data={data}/>
             <AddAssessor data={data}/>
+            <br></br>
+            <h3>New Review</h3>
+            <button>New Review</button>
         </>
     )
 }

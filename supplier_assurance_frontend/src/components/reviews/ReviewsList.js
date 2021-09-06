@@ -1,4 +1,4 @@
-import ReviewDetails  from "./ReviewOverview"
+import ReviewOverview  from "./ReviewOverview"
 import "./Review.css";
 
 const ReviewList = ({reviews}) => {
@@ -7,7 +7,7 @@ const ReviewList = ({reviews}) => {
         return(
             
                 <div key={review.id}>
-                    <ReviewDetails ReviewDetail={review}></ReviewDetails>
+                    <ReviewOverview ReviewDetail={review}></ReviewOverview>
                 </div>
            
         )

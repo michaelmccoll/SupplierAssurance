@@ -1,4 +1,5 @@
 import "./Supplier.css";
+import {Link} from 'react-router-dom';
 import {useState} from 'react';
 import SupplierDetail from "./SupplierDetail";
 
@@ -13,7 +14,7 @@ const SupplierDetails = ({SupplierDetail})=>{
                     <td>{SupplierDetail.tier}</td>
                     <td>{SupplierDetail.lastReviewDate}</td>
                     <td>{SupplierDetail.nextReviewDate}</td>
-                    {/* <SupplierDetail SupplierDetail={SupplierDetail}/> */}
+                    <td><a href={SupplierDetail.website}>{SupplierDetail.website}</a></td>
                 </tr>
             </tbody>
         </>
