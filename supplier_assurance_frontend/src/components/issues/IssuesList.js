@@ -5,7 +5,7 @@ const IssueList = ({issues})=>{
 
     const OrgIssues = issues.map(issue =>{
         return(
-            <div className="display" key={issue.id}>
+            <div className="issueDisplay" key={issue.id}>
                 <IssueDetail IssueDetail={issue}></IssueDetail>
             </div>
         )
