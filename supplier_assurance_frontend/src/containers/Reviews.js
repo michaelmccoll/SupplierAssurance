@@ -22,6 +22,7 @@ const Reviews = ({reviews,ReviewsLoaded})=>{
                     <th>Type</th>
                     <th>Date</th>
                     <th>Progress</th>
+                    <th>Triage</th>
                     <th>Review</th>
                 </thead>
             </table>

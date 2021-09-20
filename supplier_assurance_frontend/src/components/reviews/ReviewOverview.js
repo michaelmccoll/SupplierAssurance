@@ -1,5 +1,6 @@
 import "./Review.css";
 import {useState} from 'react';
+import { render } from "@testing-library/react";
 
 const ReviewDetails = ({ReviewDetail})=>{
 
@@ -11,7 +12,8 @@ const ReviewDetails = ({ReviewDetail})=>{
                     <td>{ReviewDetail.type}</td>
                     <td>{ReviewDetail.date}</td>
                     <td>{ReviewDetail.progress}</td>
-                    <td>ICON</td>
+                    <td>{ReviewDetail.triageQuestions.length}</td>
+                    <td>{ReviewDetail.questions.length}</td>
                 </tr>
             </tbody>
         </>
