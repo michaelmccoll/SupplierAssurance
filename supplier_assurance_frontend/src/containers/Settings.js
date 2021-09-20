@@ -1,5 +1,6 @@
 import AddAssessor from '../components/assessors/AddAssessor';
 import AddSupplier from '../components/suppliers/AddSupplier';
+import AddTriage from '../components/triage/AddTriage';
 
 const Settings = ({data})=>{
   
@@ -7,9 +8,7 @@ const Settings = ({data})=>{
         <>
             <AddSupplier data={data}/>
             <AddAssessor data={data}/>
-            <br></br>
-            <h3>New Review</h3>
-            <button>New Review</button>
+            {/* <AddTriage data={data}/> */}
         </>
     )
 }

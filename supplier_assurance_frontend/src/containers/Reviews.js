@@ -16,6 +16,7 @@ const Reviews = ({reviews,ReviewsLoaded})=>{
     return(
         <>
             <h2>Reviews</h2>
+            {/* <button>New Triage</button> */}
             <table className="table">
                 <thead>
                     <th>Supplier Name</th>
