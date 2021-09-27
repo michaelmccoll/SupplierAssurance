@@ -8,7 +8,7 @@ const Settings = ({data})=>{
         <>
             <AddSupplier data={data}/>
             <AddAssessor data={data}/>
-            {/* <AddTriage data={data}/> */}
+            <AddTriage data={data}/>
         </>
     )
 }

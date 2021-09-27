@@ -4,14 +4,16 @@ import issue from "./Issues.png";
 const IssueDetails = ({IssueDetail})=>{
     return(
         <>
-            <div className="issue">
-                <img className="issuePic" src={issue}></img><a className="issueName"><b>{IssueDetail.question.review.supplier.name}</b> <br/> {IssueDetail.issue}</a>
-                <h4>Domain: {IssueDetail.question.domain}</h4>
-                <h4>Question: {IssueDetail.question.question}</h4>
-                <h4>Rating: {IssueDetail.question.rating}</h4>
-                <h4>Date Raised: {IssueDetail.question.review.date}</h4>
-                <h4>Target Date: {IssueDetail.targetDate}</h4>
-                <h4>Status: {IssueDetail.status}</h4>
+            <div className="issueContainer">
+                <img className="issuePic" src={issue}></img>
+                <h3 className="supplierName">{IssueDetail.question.review.supplier.name}</h3>
+                <h4 className="issue">Issue: {IssueDetail.issue}</h4>
+                <h4 className="domain">Domain: {IssueDetail.question.domain}</h4>
+                <h4 className="question">Question: {IssueDetail.question.question}</h4>
+                <h4 className="rating">Rating: {IssueDetail.question.rating}</h4>
+                <h4 className="dateRaised">Date Raised: {IssueDetail.question.review.date}</h4>
+                <h4 className="targetDate">Target Date: {IssueDetail.targetDate}</h4>
+                <h4 className="status">Status: {IssueDetail.status}</h4>
             </div>
         </>
     )

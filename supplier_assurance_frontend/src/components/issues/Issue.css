@@ -1,4 +1,5 @@
-.issue {
+.issueContainer {
+    display: grid;
     padding: 10px 10px;
     background-color:white;
     border-color: rgb(27,160,236);
@@ -6,21 +7,61 @@
     border-style: solid;
     border-radius: 10px;
     width: 650px;
-    margin: 5px 10px 10px 5px;    
+    margin: 5px 10px 10px 5px;   
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-areas:
+        "issuePic supplierName supplierName rating"
+        "issue issue issue domain"
+        "question question question question"
+        "dateRaised targetDate . status"
+    ;
 }
 
 .issuePic{
+    grid-area: issuePic;
     width: 40px;
     margin: 10px;
 }
 
-.issueName{
+.supplierName{
+    grid-area:supplierName;
     font-size: larger;
-    margin: 5px;
+    color: rgb(27,160,236);
     vertical-align:top;
     display:inline-table;
+    text-decoration: none;
 }
 
 .issueDisplay {
+    grid-area:issueDisplay;
     display:inline-block;
+}
+
+.issue{
+    grid-area: issue;
+    color: red;
+}
+
+.domain{
+    grid-area: domain;
+}
+
+.question{
+    grid-area: question;
+}
+
+.rating{
+    grid-area: rating;
+}
+
+.dateRaised{
+    grid-area: dateRaised;
+}
+
+.targetDate{
+    grid-area: targetDate;
+}
+
+.status{
+    grid-area: status;
 }
